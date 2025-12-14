@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    background: url('nickel.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.lists{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 7rem;
+    border-radius: 10px;
+}
+
+.lists li{
+    padding: 0 10px;
+    font-weight: 600;
+    font-size: 10px;
+}
+
+
+.lists button{
+    margin: 10px 0 0 0;
+    font-size: 13px;
+    color: black;
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+    background-color: transparent;
+    font-weight: 700;
+    font-style: oblique;
+    color: white;
+    background-color:darkgray;
+}
+
+.hero{
+    font-weight: 400px;
+    font-style: italic;
+    padding: 5px;
+    text-align: center;
+}
+
+.lists span{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 0 0 ;
+}
+
+.lists span img{
+    height: 20px;
+    width: 20px;
+    padding: 0;
+}
+
+.hero h1{
+    font-weight:300;
+    font-size: 70px;
+    margin: 5rem;
+}
+
+.lists ul{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+.lists li{
+    padding: 0 10px;
+    list-style: none;
+}
+.lists a{
+    text-decoration: none;
+    color: whit
+    e;
+}
+
+.welcome{
+    text-align: center;
+    font-weight: 100;
+    font-style: oblique;
+}
+
+.welcome span{
+    padding: 0 40px;
+}
+
+.welcome button{
+    background: transparent;
+    border-radius: 5px;
+}
+
+.welcome span button h1{
+    padding-left: 10px;
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-bottom:0px ;
+}
+.gayasf h4{
+    text-align: center;
+    color: black;
+}
