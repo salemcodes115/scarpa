@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 7rem;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+.navbar li{
+    padding: 0 10px;
+    font-weight: 600;
+    font-size: 10px;
+}
+
+.hero {
+    background: url('fashion1.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 70rem;
+    width: 900rem;
+}
+
+.hero h1{
+    margin: 0;
+    padding: 10px;
+}
+
+.hero button{
+    margin-top: 35rem;
+    margin-left: 35rem;
+    background: transparent;
+    border-radius: 5px;
+}
+
+
+.banner span{
+    margin: 0 3rem;   
+}
+

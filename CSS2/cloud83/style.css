@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    background: url('gaming\ .png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+nav ul{
+     display: flex;
+    justify-content: space-between;
+
+}
+
+nav ul li{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    padding-left: 5rem;
+}
+
+span{
+    padding: 10px;
+}
+
+span button{
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+div{
+    text-align: center;
+}
+
+div h1{
+    margin-top: 10rem;
+    font-size: 4rem;
+    font-weight: 500px;
+    font-family: cursive;
+}
+
+div h6{
+    font-weight: 100px;
+    font-style: italic;
+
+}
+
+div button{
+    padding: 10px 30px;
+    background: transparent;
+}

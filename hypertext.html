@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio 2025</title>
+    <style>
+        /* Basic styles for layout visibility */
+        body { font-family: sans-serif; line-height: 1.6; margin: 0; padding: 0; scroll-behavior: smooth; }
+        header { background: #333; color: #fff; padding: 1rem; position: fixed; width: 100%; top: 0; }
+        nav ul { list-style: none; display: flex; justify-content: center; padding: 0; }
+        nav ul li { margin: 0 15px; }
+        nav ul li a { color: white; text-decoration: none; font-weight: bold; }
+        section { padding: 80px 20px; max-width: 800px; margin: auto; border-bottom: 1px solid #ddd; }
+        footer { background: #333; color: white; text-align: center; padding: 20px; }
+        form { display: grid; gap: 10px; max-width: 400px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+        video, audio { width: 100%; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+    <!-- 1. Navbar with local links -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <h1>Welcome to My 2025 Portfolio</h1>
+            <p>Showcasing modern web development and semantic design.</p>
+        </section>
+
+        <!-- 2. About Section with Media -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a developer focused on creating clean, accessible code. Watch my video introduction below:</p>
+            
+            <!-- Video/Audio Element -->
+            <video controls poster="via.placeholder.com">
+                <source src="intro.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+            <p>Listen to my design philosophy:</p>
+            <audio controls>
+                <source src="audio-bio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <!-- Work Section with Lists -->
+        <section id="work">
+            <h2>Work</h2>
+            <p>Recent projects completed in 2025:</p>
+            <ul>
+                <li><strong>Project Alpha:</strong> A responsive e-commerce dashboard.</li>
+                <li><strong>Project Beta:</strong> An AI-driven task management tool.</li>
+                <li><strong>Project Gamma:</strong> Local community networking app.</li>
+            </ul>
+        </section>
+
+        <!-- Resume Section with Table -->
+        <section id="resume">
+            <h2>Resume</h2>
+            <table>
+                <caption>Professional Experience</caption>
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Role</th>
+                        <th>Company</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2024 - 2025</td>
+                        <td>Lead Developer</td>
+                        <td>Tech Solutions Inc.</td>
+                    </tr>
+                    <tr>
+                        <td>2022 - 2024</td>
+                        <td>Junior Web Designer</td>
+                        <td>Creative Agency</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Contact Section using HTML Form -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Let's work together. Please fill out the form below:</p>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="user_email" required>
+
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message" rows="4"></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- 3. Page Footer -->
+    <footer>
+        <p>&copy; 2025 Professional Portfolio. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
