@@ -1,0 +1,33 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 20px;
+    font-size: large;
+}
+
+.active {
+    font-weight: bold;
+    color: blue;
+}
+
+div{
+    text-align: center;
+    margin-top: 5rem;
+}
+
+div h1{
+    text-transform: capitalize;
+    font-size: xx-large;
+}
+
+div h2{
+    font-size: medium;
+    color: gray;
+    margin-top: 20px;
+}
