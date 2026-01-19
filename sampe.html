@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Savory Bistro | 2026 Fine Dining</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="cdn.jsdelivr.net" rel="stylesheet">
+    <!-- Font Awesome for Social Icons -->
+    <link rel="stylesheet" href="cdnjs.cloudflare.com">
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('images.unsplash.com');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .menu-img {
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .footer-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">SAVORY BISTRO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section">
+        <div class="container">
+            <h1 class="display-2 fw-bold">Taste the Excellence</h1>
+            <p class="lead mb-4">Experience 2026's most anticipated culinary journey.</p>
+            <a href="#menu" class="btn btn-warning btn-lg px-5">View Menu</a>
+        </div>
+    </header>
+
+    <!-- Menu Section (Grid) -->
+    <section id="menu" class="container py-5">
+        <h2 class="text-center mb-5">Our Signature Dishes</h2>
+        <div class="row g-4">
+            <!-- Item 1 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="images.unsplash.com" class="card-img-top menu-img" alt="Salad">
+                    <div class="card-body">
+                        <h5 class="card-title">Green Harvest Bowl</h5>
+                        <p class="card-text text-muted">Fresh organic greens, quinoa, avocado, and lime-tahini dressing.</p>
+                        <p class="fw-bold text-success">$18.50</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="images.unsplash.com" class="card-img-top menu-img" alt="Pizza">
+                    <div class="card-body">
+                        <h5 class="card-title">Artisan Truffle Pizza</h5>
+                        <p class="card-text text-muted">Hand-stretched dough, wild mushrooms, and white truffle oil.</p>
+                        <p class="fw-bold text-success">$24.00</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="images.unsplash.com" class="card-img-top menu-img" alt="Steak">
+                    <div class="card-body">
+                        <h5 class="card-title">Aged Ribeye Steak</h5>
+                        <p class="card-text text-muted">28-day dry-aged beef served with garlic mashed potatoes.</p>
+                        <p class="fw-bold text-success">$42.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section (Two-Column Layout) -->
+    <section id="about" class="bg-light py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="images.unsplash.com" class="img-fluid rounded-3 shadow" alt="Our Kitchen">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="mb-4">Our Story</h2>
+                    <p class="lead">Crafting memories through flavors since 2010.</p>
+                    <p>At Savory Bistro, we believe that dining is an art form. Our team of world-class chefs sources ingredients from local sustainable farms to ensure every plate tells a story of quality and passion. Whether it's a romantic dinner or a family gathering, we provide an atmosphere that feels like home.</p>
+                    <button class="btn btn-outline-dark">Read More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center mb-5">
+                <h2>Contact Us</h2>
+                <p>Have a question or want to make a reservation? Reach out to us!</p>
+            </div>
+            <div class="col-md-6">
+                <form class="p-4 shadow-sm border rounded">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-dark w-100">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <div class="footer-icons mb-3">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p class="mb-0">&copy; 2026 Savory Bistro. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="cdn.jsdelivr.net"></script>
+</body>
+</html>

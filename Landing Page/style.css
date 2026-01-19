@@ -1,0 +1,190 @@
+/* Custom smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header Styles */
+.navbar {
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #2563eb;
+    letter-spacing: -0.05em;
+}
+
+.nav-item {
+    color: #4b5563;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+    color: #2563eb;
+}
+
+/* Hero Styles */
+.hero-section {
+    background-color: #2563eb;
+    color: white;
+    padding: 6rem 0;
+}
+
+.hero-title {
+    font-size: 2.25rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .hero-title {
+        font-size: 3.75rem;
+    }
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2.5rem;
+    opacity: 0.8;
+}
+
+.btn-primary {
+    background-color: white;
+    color: #2563eb;
+    padding: 1rem 2.5rem;
+    border-radius: 9999px;
+    font-weight: 700;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background-color: #f3f4f6;
+}
+
+.btn-primary:active {
+    transform: scale(0.95);
+}
+
+/* Product Card Styles */
+.section-heading {
+    font-size: 1.875rem;
+    font-weight: 800;
+    color: #1f2937;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid #f3f4f6;
+}
+
+.product-card:hover {
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
+    transform: translateY(-0.5rem);
+}
+
+.image-container {
+    width: 100%;
+    height: 14rem;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover .image-container img {
+    transform: scale(1.1);
+}
+
+.product-name {
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #1f2937;
+}
+
+.product-desc {
+    color: #6b7280;
+    font-size: 0.875rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.625;
+}
+
+.btn-shop {
+    width: 100%;
+    background-color: #2563eb;
+    color: white;
+    padding: 0.75rem 0;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-shop:hover {
+    background-color: #1d4ed8;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #111827;
+    color: #9ca3af;
+    padding: 4rem 0;
+    margin-top: 5rem;
+}
+
+.subscribe-input {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 0.5rem 0 0 0.5rem;
+    background-color: #1f2937;
+    border: none;
+    color: white;
+}
+
+.subscribe-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #2563eb;
+}
+
+.btn-subscribe {
+    background-color: #2563eb;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-subscribe:hover {
+    background-color: #1d4ed8;
+}
+
+/* Mobile Responsiveness Extra Tweaks */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 1.875rem;
+    }
+    
+    .hero-section {
+        padding: 4rem 0;
+    }
+}

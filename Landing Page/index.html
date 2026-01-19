@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe Store | Premium Collection 2026</title>
+    <!-- Tailwind CSS for framework features -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- External Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50">
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="navbar">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="logo">LUXE.</div>
+            
+            <ul class="nav-links hidden md:flex space-x-8">
+                <li><a href="#" class="nav-item">Home</a></li>
+                <li><a href="#products" class="nav-item">Products</a></li>
+                <li><a href="#about" class="nav-item">About</a></li>
+                <li><a href="#contact" class="nav-item">Contact</a></li>
+            </ul>
+
+            <button class="md:hidden mobile-menu-btn">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="hero-title">Elevate Your Lifestyle</h1>
+            <p class="hero-subtitle">Discover our premium 2026 curated essentials.</p>
+            <a href="#products" class="btn-primary">View Catalog</a>
+        </div>
+    </section>
+
+    <!-- PRODUCT SECTION -->
+    <section id="products" class="container mx-auto px-6 py-16">
+        <h2 class="section-heading text-center mb-12">Featured Products</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            
+            <!-- Product Card 1 -->
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="smartwatch.png" alt="Smart Watch">
+                </div>
+                <div class="p-6">
+                    <h3 class="product-name">Smart Watch</h3>
+                    <p class="product-desc">Advanced health tracking and 5G connectivity for 2026.</p>
+                    <button class="btn-shop">Shop Now</button>
+                </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="studioaudio.png" alt="Headphones">
+                </div>
+                <div class="p-6">
+                    <h3 class="product-name">Studio Audio</h3>
+                    <p class="product-desc">Immersive spatial audio with adaptive noise cancellation.</p>
+                    <button class="btn-shop">Shop Now</button>
+                </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="retrolence.png" alt="Camera">
+                </div>
+                <div class="p-6">
+                    <h3 class="product-name">Retro Lens</h3>
+                    <p class="product-desc">Classic analog aesthetic with high-end digital sensors.</p>
+                    <button class="btn-shop">Shop Now</button>
+                </div>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="product-card">
+                <div class="image-container">
+                    <img src="aerorunners.png" alt="Shoes">
+                </div>
+                <div class="p-6">
+                    <h3 class="product-name">Aero Runners</h3>
+                    <p class="product-desc">Eco-friendly materials engineered for speed and comfort.</p>
+                    <button class="btn-shop">Shop Now</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="footer-brand">
+                <h4 class="text-2xl font-bold mb-4">LUXE.</h4>
+                <p class="text-gray-400">Defining excellence in retail since 2026.</p>
+            </div>
+            <div class="footer-links">
+                <h4 class="font-semibold mb-4 text-white">Navigation</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-blue-400 transition">Support</a></li>
+                    <li><a href="#" class="hover:text-blue-400 transition">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-blue-400 transition">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-subscribe">
+                <h4 class="font-semibold mb-4 text-white">Stay Updated</h4>
+                <div class="flex">
+                    <input type="email" placeholder="Enter email" class="subscribe-input">
+                    <button class="btn-subscribe">Join</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom mt-12 text-center text-gray-500 text-sm border-t border-gray-800 pt-8">
+            &copy; 2026 Luxe Premium Goods Inc.
+        </div>
+    </footer>
+
+</body>
+</html>
