@@ -1,0 +1,5 @@
+    CASE 1 : // code to be executed if n = 1;
+            BREAK; // BREAK is used to skip the other cases
+    CASE 2 : // code to be executed if n = 2;
+    DEFAULT :  // code to be executed if n doesn't match any cases
+END_SWITCH

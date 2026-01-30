@@ -1,0 +1,9 @@
+body{
+    scroll-behavior: smooth;
+}
+
+ul {
+    display: flex;
+    margin-left: 30rem;
+    justify-content: space-evenly;
+}
