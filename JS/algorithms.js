@@ -1,3 +1,154 @@
+// Algorithms and utility functions requested by the user
+
+// Problem 1: Sum of distinct (symmetric-difference) elements between two arrays
+function sumOfDistinct(a, b) {
+  const setA = new Set(a);
+  const setB = new Set(b);
+  let sum = 0;
+  for (const x of setA) if (!setB.has(x)) sum += x;
+  for (const x of setB) if (!setA.has(x)) sum += x;
+  return sum;
+}
+
+// Problem 2: Dot product - procedure (simulated) and function
+function dotProductProcedure(v1, v2, outObj) {
+  let ps = 0;
+  for (let i = 0; i < Math.min(v1.length, v2.length); i++) ps += v1[i] * v2[i];
+  outObj.ps = ps; // write result into passed object (simulates procedure with output param)
+}
+
+function dotProductFunction(v1, v2) {
+  let ps = 0;
+  for (let i = 0; i < Math.min(v1.length, v2.length); i++) ps += v1[i] * v2[i];
+  return ps;
+}
+
+function areOrthogonalProcedure(v1, v2) {
+  const out = {};
+  dotProductProcedure(v1, v2, out);
+  return out.ps === 0;
+}
+
+function areOrthogonalFunction(v1, v2) {
+  return dotProductFunction(v1, v2) === 0;
+}
+
+// String manipulation functions
+function reverseString(s) {
+  return s.split('').reverse().join('');
+}
+
+function countCharacters(s) {
+  return s.length;
+}
+
+function capitalizeWords(sentence) {
+  return sentence
+    .split(' ')
+    .map(w => (w.length ? w[0].toUpperCase() + w.slice(1) : w))
+    .join(' ');
+}
+
+// Array functions
+function findMax(arr) {
+  if (!arr.length) return undefined;
+  return arr.reduce((m, x) => (x > m ? x : m), arr[0]);
+}
+
+function findMin(arr) {
+  if (!arr.length) return undefined;
+  return arr.reduce((m, x) => (x < m ? x : m), arr[0]);
+}
+
+function sumOfArray(arr) {
+  return arr.reduce((s, x) => s + x, 0);
+}
+
+function filterArray(arr, predicate) {
+  const out = [];
+  for (const x of arr) if (predicate(x)) out.push(x);
+  return out;
+}
+
+// Mathematical functions
+function factorial(n) {
+  if (n < 0) return undefined;
+  let res = 1;
+  for (let i = 2; i <= n; i++) res *= i;
+  return res;
+}
+
+function isPrime(n) {
+  if (n <= 1) return false;
+  if (n <= 3) return true;
+  if (n % 2 === 0) return false;
+  const r = Math.floor(Math.sqrt(n));
+  for (let i = 3; i <= r; i += 2) if (n % i === 0) return false;
+  return true;
+}
+
+function fibonacciSequence(terms) {
+  const out = [];
+  if (terms <= 0) return out;
+  if (terms >= 1) out.push(0);
+  if (terms >= 2) out.push(1);
+  while (out.length < terms) {
+    const n = out.length;
+    out.push(out[n - 1] + out[n - 2]);
+  }
+  return out;
+}
+
+// --- Quick tests / demo outputs ---
+console.log('--- Problem 1: Sum of distinct elements ---');
+console.log(sumOfDistinct([3, 1, 7, 9], [2, 4, 1, 9, 3])); // expected 13 (4+7+2)
+
+console.log('\n--- Problem 2: Dot product and orthogonality ---');
+const v1 = [1, 2, 3];
+const v2 = [3, -6, 3];
+const out = {};
+dotProductProcedure(v1, v2, out);
+console.log('dotProductProcedure ps=', out.ps);
+console.log('dotProductFunction =', dotProductFunction(v1, v2));
+console.log('areOrthogonalProcedure =', areOrthogonalProcedure(v1, v2));
+console.log('areOrthogonalFunction =', areOrthogonalFunction(v1, v2));
+
+console.log('\n--- String functions ---');
+const s = 'hello world';
+console.log('reverseString:', reverseString(s));
+console.log('countCharacters:', countCharacters(s));
+console.log('capitalizeWords:', capitalizeWords('this is a test'));
+
+console.log('\n--- Array functions ---');
+const arr = [5, 9, 1, 7, -2];
+console.log('max:', findMax(arr));
+console.log('min:', findMin(arr));
+console.log('sum:', sumOfArray(arr));
+console.log('filter >5:', filterArray(arr, x => x > 5));
+
+console.log('\n--- Math functions ---');
+console.log('factorial(5)=', factorial(5));
+console.log('isPrime(17)=', isPrime(17));
+console.log('isPrime(18)=', isPrime(18));
+console.log('fibonacciSequence(8)=', fibonacciSequence(8));
+
+module.exports = {
+  sumOfDistinct,
+  dotProductProcedure,
+  dotProductFunction,
+  areOrthogonalProcedure,
+  areOrthogonalFunction,
+  reverseString,
+  countCharacters,
+  capitalizeWords,
+  findMax,
+  findMin,
+  sumOfArray,
+  filterArray,
+  factorial,
+  isPrime,
+  fibonacciSequence,
+};
 // ========================================
 // PROBLEM 1: Sum of Distinct Elements
 // ========================================
