@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Shopping Cart</h1>
+        
+        <div class="cart-wrapper">
+            <div class="cart-items">
+                <!-- Cart items will be dynamically displayed here -->
+                <div class="cart-item" data-item-id="1">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&h=300&fit=crop" alt="Wireless Headphones" class="item-image">
+                    <div class="item-details">
+                        <h3 class="item-name">Wireless Headphones</h3>
+                        <p class="item-description">High-quality sound with noise cancellation</p>
+                        <p class="item-price">$79.99</p>
+                    </div>
+                    <div class="item-quantity">
+                        <button class="qty-btn decrease-qty" data-item-id="1">-</button>
+                        <span class="quantity" data-item-id="1">1</span>
+                        <button class="qty-btn increase-qty" data-item-id="1">+</button>
+                    </div>
+                    <div class="item-actions">
+                        <button class="heart-btn" data-item-id="1">♡</button>
+                        <button class="delete-btn" data-item-id="1">Delete</button>
+                    </div>
+                    <p class="item-total">Total: $79.99</p>
+                </div>
+
+                <div class="cart-item" data-item-id="2">
+                    <img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=300&h=300&fit=crop" alt="USB-C Cable" class="item-image">
+                    <div class="item-details">
+                        <h3 class="item-name">USB-C Cable</h3>
+                        <p class="item-description">Durable charging cable, 6ft length</p>
+                        <p class="item-price">$12.99</p>
+                    </div>
+                    <div class="item-quantity">
+                        <button class="qty-btn decrease-qty" data-item-id="2">-</button>
+                        <span class="quantity" data-item-id="2">2</span>
+                        <button class="qty-btn increase-qty" data-item-id="2">+</button>
+                    </div>
+                    <div class="item-actions">
+                        <button class="heart-btn" data-item-id="2">♡</button>
+                        <button class="delete-btn" data-item-id="2">Delete</button>
+                    </div>
+                    <p class="item-total">Total: $25.98</p>
+                </div>
+
+                <div class="cart-item" data-item-id="3">
+                    <img src="https://images.unsplash.com/photo-1592286927505-1def25e4cda1?w=300&h=300&fit=crop" alt="Phone Case" class="item-image">
+                    <div class="item-details">
+                        <h3 class="item-name">Phone Case</h3>
+                        <p class="item-description">Protective case for smartphone</p>
+                        <p class="item-price">$19.99</p>
+                    </div>
+                    <div class="item-quantity">
+                        <button class="qty-btn decrease-qty" data-item-id="3">-</button>
+                        <span class="quantity" data-item-id="3">1</span>
+                        <button class="qty-btn increase-qty" data-item-id="3">+</button>
+                    </div>
+                    <div class="item-actions">
+                        <button class="heart-btn" data-item-id="3">♡</button>
+                        <button class="delete-btn" data-item-id="3">Delete</button>
+                    </div>
+                    <p class="item-total">Total: $19.99</p>
+                </div>
+
+                <div class="cart-item" data-item-id="4">
+                    <img src="https://images.unsplash.com/photo-1606986628025-35d57e735ae0?w=300&h=300&fit=crop" alt="Screen Protector" class="item-image">
+                    <div class="item-details">
+                        <h3 class="item-name">Screen Protector</h3>
+                        <p class="item-description">Tempered glass protection</p>
+                        <p class="item-price">$9.99</p>
+                    </div>
+                    <div class="item-quantity">
+                        <button class="qty-btn decrease-qty" data-item-id="4">-</button>
+                        <span class="quantity" data-item-id="4">3</span>
+                        <button class="qty-btn increase-qty" data-item-id="4">+</button>
+                    </div>
+                    <div class="item-actions">
+                        <button class="heart-btn" data-item-id="4">♡</button>
+                        <button class="delete-btn" data-item-id="4">Delete</button>
+                    </div>
+                    <p class="item-total">Total: $29.97</p>
+                </div>
+            </div>
+
+            <div class="cart-summary">
+                <h2>Order Summary</h2>
+                <div class="summary-row">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">$155.94</span>
+                </div>
+                <div class="summary-row">
+                    <span>Tax (10%):</span>
+                    <span id="tax">$15.59</span>
+                </div>
+                <div class="summary-row total-row">
+                    <span>Total:</span>
+                    <span id="total">$171.53</span>
+                </div>
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+
+        <div class="empty-cart-message" style="display: none;">
+            <p>Your cart is empty</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
