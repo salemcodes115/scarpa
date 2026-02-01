@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow - Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1>TaskFlow</h1>
+                <p class="tagline">Stay organized, get things done</p>
+            </div>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <div class="input-wrapper">
+                    <input 
+                        type="text" 
+                        id="todoInput" 
+                        class="todo-input" 
+                        placeholder="Add a new task..."
+                        aria-label="Add new task"
+                    >
+                    <button id="addBtn" class="add-btn" aria-label="Add task">
+                        <span class="plus-icon">+</span> Add Task
+                    </button>
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="active">Active</button>
+                    <button class="filter-btn" data-filter="completed">Completed</button>
+                </div>
+            </div>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-label">Total:</span>
+                    <span class="stat-value" id="totalCount">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Completed:</span>
+                    <span class="stat-value" id="completedCount">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Remaining:</span>
+                    <span class="stat-value" id="remainingCount">0</span>
+                </div>
+            </div>
+
+            <div class="todo-list" id="todoList" role="list">
+                <div class="empty-state">
+                    <p>📋 No tasks yet. Add one to get started!</p>
+                </div>
+            </div>
+
+            <div class="action-buttons" id="actionButtons" style="display: none;">
+                <button id="clearCompleted" class="clear-btn">Clear Completed</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>TaskFlow © 2026 | Your personal task manager</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

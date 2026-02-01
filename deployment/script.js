@@ -1,4 +1,4 @@
-// Mobile menu toggle
+l // Mobile menu toggle
 document.getElementById('mobileToggle').addEventListener('click', () => {
   document.getElementById('navMenu').classList.toggle('active');
 });
