@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Interactive Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">📊 Dashboard</div>
+      <button id="mobileToggle" class="mobile-toggle">☰</button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Interactive App</h1>
+      <p>Explore features, interact with real-time updates, and enjoy a smooth user experience</p>
+      <button id="ctaBtn" class="btn btn-primary">Get Started</button>
+    </div>
+  </header>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <h2>Key Features</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="icon">⚡</div>
+        <h3>Fast & Responsive</h3>
+        <p>Lightning-quick performance on all devices with responsive design</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🎨</div>
+        <h3>Beautiful UI</h3>
+        <p>Modern, clean interface with smooth animations and transitions</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🔧</div>
+        <h3>Interactive</h3>
+        <p>Dynamic features that respond to user input in real-time</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">📱</div>
+        <h3>Mobile First</h3>
+        <p>Optimized for mobile, tablet, and desktop experiences</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>Projects & Items</h2>
+    <div class="controls">
+      <input type="text" id="searchBox" placeholder="Search projects..." class="search-input">
+      <button id="toggleViewBtn" class="btn btn-secondary">Toggle View</button>
+    </div>
+    <div id="projectList" class="project-grid grid-view">
+      <article class="project-card">
+        <div class="card-image">🚀</div>
+        <h3>Rocket Project</h3>
+        <p>High-speed application framework</p>
+        <button class="btn btn-small btn-info">View Details</button>
+      </article>
+      <article class="project-card">
+        <div class="card-image">💡</div>
+        <h3>Innovation Hub</h3>
+        <p>Creative solution platform</p>
+        <button class="btn btn-small btn-info">View Details</button>
+      </article>
+      <article class="project-card">
+        <div class="card-image">🔐</div>
+        <h3>Security Suite</h3>
+        <p>Advanced protection system</p>
+        <button class="btn btn-small btn-info">View Details</button>
+      </article>
+      <article class="project-card">
+        <div class="card-image">🌐</div>
+        <h3>Global Network</h3>
+        <p>Worldwide connectivity solution</p>
+        <button class="btn btn-small btn-info">View Details</button>
+      </article>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <h2>Quick Stats</h2>
+    <div class="stat-box">
+      <div class="stat">
+        <div class="stat-number" data-target="1000">0</div>
+        <div class="stat-label">Happy Users</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number" data-target="250">0</div>
+        <div class="stat-label">Projects</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number" data-target="98">0</div>
+        <div class="stat-label">Success Rate %</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number" data-target="15">0</div>
+        <div class="stat-label">Years Active</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Get in Touch</h2>
+    <form id="contactForm" class="contact-form">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+    <div id="formMessage" class="form-message"></div>
+  </section>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modalTitle">Project Details</h2>
+      <p id="modalBody">Click on a project card to see more details here.</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Interactive App. Built with HTML, CSS & JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
