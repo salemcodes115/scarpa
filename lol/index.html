@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Cards — Reusable Component</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="pricing-container">
+        <div id="card-basic"></div>
+        <div id="card-pro"></div>
+        <div id="card-enterprise"></div>
+    </div>
+
+    <script src="component.js"></script>
+    <script>
+        // Create reusable pricing cards
+        const basicPlan = new PricingCard({
+            title: 'Basic Plan',
+            price: '$9.99',
+            period: '/month',
+            features: ['1 GB Storage', 'Basic Support', 'All Core Features'],
+            buttonText: 'Start Trial',
+            buttonColor: 'primary'
+        });
+        basicPlan.render(document.getElementById('card-basic'));
+
+        const proPlan = new PricingCard({
+            title: 'Pro Plan',
+            price: '$29.99',
+            period: '/month',
+            features: ['50 GB Storage', 'Priority Support', 'Advanced Analytics', 'API Access'],
+            buttonText: 'Get Started',
+            buttonColor: 'success'
+        });
+        proPlan.render(document.getElementById('card-pro'));
+
+        const enterprisePlan = new PricingCard({
+            title: 'Enterprise',
+            price: 'Custom',
+            period: '/year',
+            features: ['Unlimited Storage', '24/7 Support', 'Custom Integration', 'Dedicated Manager'],
+            buttonText: 'Contact Sales',
+            buttonColor: 'accent'
+        });
+        enterprisePlan.render(document.getElementById('card-enterprise'));
+    </script>
+</body>
+</html>
