@@ -54,7 +54,7 @@
     counts.textContent = `${tasks.length} task${tasks.length===1? '':'s'}`;
   }
 
-  function escapeHtml(s){ return String(s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;"','\' : '&#039;'}[m] || m)); }
+  function escapeHtml(s){ return String(s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#039;'}[m] || m)); }
 
   function addTask(text){
     const trimmed = text && text.trim(); if(!trimmed) return;
